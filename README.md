@@ -3,7 +3,7 @@
 Day|Progress
 --|--
 Day 01 | ✔
-Day 02 |In Progress
+Day 02 |Completed LEVEL 1 Questions
 Day 03 |
 Day 04 |
 Day 05 |
