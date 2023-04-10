@@ -19,7 +19,14 @@ console.log(sentence2.match(/because/g).length);
 
 const sentence3 = '%I $am@% a %tea@cher%, &and& I lo%#ve %te@a@ching%;. The@re $is no@th@ing; &as& mo@re rewarding as educa@ting &and& @emp%o@weri@ng peo@ple. ;I found tea@ching m%o@re interesting tha@n any ot#her %jo@bs. %Do@es thi%s mo@tiv#ate yo@u to be a tea@cher!? %Th#is 30#Days&OfJavaScript &is al@so $the $resu@lt of &love& of tea&ching';
 
-const clearedSentence = sentence3.replace(/[\%\$\#\@\&\;\!\?]/gi, '') // To clear all the symbols
-console.log(clearedSentence);
+// To clear all the symbols
+const clearedSentence = sentence3.replace(/[\%\$\#\@\&\;\!\?]/gi, '');
+
+// Prints clean text
+console.log(clearedSentence); 
+
+// Splits words into seperate indexes
 const frequentWord = clearedSentence.split(' ');
+
+// Prints the array containing 
 console.log(frequentWord);
