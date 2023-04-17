@@ -38,7 +38,7 @@ console.log(x_intercept == slope);
 // I don't know how to calculate the quadratic equation
 
 /* 
-#10 Write a script that prompt a user to enter hours and rate per hour. Calculate pay of the person?
+#9 Write a script that prompt a user to enter hours and rate per hour. Calculate pay of the person?
 
 Enter hours: 40
 Enter rate per hour: 28
@@ -48,3 +48,30 @@ Your weekly earning is 1120
 const hours = prompt.hours('Enter Hours','')
 const rate_per_minute = prompt.rate_per_minute('Enter Rate per Minute', '')
 console.log(`Your weekly earning is ${hours * rate_per_minute}`);
+
+// #10 If the length of your name is greater than 7 say, your name is long else say your name is short.
+function nameLength(name) {
+    if (name.length > 7) {
+        return `Your name is long`;
+    } else {
+        return `Your name is short`;
+    }
+}
+
+console.log(nameLength(window.prompt('Your Name',''))) // Called nameLength() Function inside which a prompt run and asks user to enter a name.
+
+/* 
+#11 Compare your first name length and your family name length and you should get this output.
+    
+    let firstName = 'Asabeneh'
+    let lastName = 'Yetayeh'
+
+    Output: Your first name, Asabeneh is longer than your family name, Yetayeh
+*/
+
+let firstName = 'Asabeneh'
+let lastName = 'Yetayeh'
+''
+if (firstName != lastName) {
+    console.log(`Your first name, ${firstName} is longer than your family name, ${lastName}`);
+}
