@@ -38,11 +38,11 @@ console.log(x_intercept == slope);
 // I don't know how to calculate the quadratic equation
 
 /* 
-#9 Write a script that prompt a user to enter hours and rate per hour. Calculate pay of the person?
+    #9 Write a script that prompt a user to enter hours and rate per hour. Calculate pay of the person?
 
-Enter hours: 40
-Enter rate per hour: 28
-Your weekly earning is 1120
+    Enter hours: 40
+    Enter rate per hour: 28
+    Your weekly earning is 1120
 */
 
 const hours = prompt.hours('Enter Hours','')
@@ -61,7 +61,7 @@ function nameLength(name) {
 console.log(nameLength(window.prompt('Your Name',''))) // Called nameLength() Function inside which a prompt run and asks user to enter a name.
 
 /* 
-#11 Compare your first name length and your family name length and you should get this output.
+    #11 Compare your first name length and your family name length and you should get this output.
     
     let firstName = 'Asabeneh'
     let lastName = 'Yetayeh'
@@ -71,7 +71,43 @@ console.log(nameLength(window.prompt('Your Name',''))) // Called nameLength() Fu
 
 let firstName = 'Asabeneh'
 let lastName = 'Yetayeh'
-''
+
 if (firstName != lastName) {
     console.log(`Your first name, ${firstName} is longer than your family name, ${lastName}`);
+}
+
+/*
+    #12 Declare two variables myAge and yourAge and assign them initial values and myAge and yourAge.
+
+    let myAge = 250
+    let yourAge = 25
+
+    Output: 
+    I am 225 years older than you.
+
+*/
+
+let myAge = 250, yourAage = 25
+console.log(`I am ${myAge - yourAage} years older than you`);
+
+
+/*
+    #13 Using prompt get the year the user was born and if the user is 18 or above allow the user to drive if not tell the user to wait a certain amount of years.
+
+    Enter birth year: 1995
+    You are 25. You are old enough to drive
+
+    Enter birth year: 2005
+    You are 15. You will be allowed to drive after 3 years.
+
+*/
+
+const presentYear = new Date().getFullYear()
+let birthYear = window.prompt('Enter birth year: ')
+let checkAge = presentYear - birthYear
+
+if (checkAge >= 18) {
+  console.log(`You are ${checkAge}. You are old enough to drive`);
+} else {
+  console.log(`You are ${checkAge}. You will be allowed to drive after ${18-checkAge} year`);
 }
