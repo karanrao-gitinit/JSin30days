@@ -111,3 +111,33 @@ if (checkAge >= 18) {
 } else {
   console.log(`You are ${checkAge}. You will be allowed to drive after ${18-checkAge} year`);
 }
+
+/**
+    #14 Write a script that prompt the user to enter number of years. Calculate the number of seconds a person can live. Assume some one lives just hundred years
+
+    Enter number of years you live: 100
+    You lived 3153600000 seconds.
+*/
+let yearsLived = window.prompt('Enter the number of Years lived')
+const secondsInYear = 31536000
+
+console.log(`You lived ${yearsLived * secondsInYear} years`);
+
+
+/**
+ #15 Create a human readable time format using the Date time object
+
+    YYYY-MM-DD HH:mm
+    DD-MM-YYYY HH:mm
+    DD/MM/YYYY HH:mm
+*/
+const now = new Date()
+const year = now.getFullYear()
+const month = now.getMonth()
+const day = now.getDate()
+const hour = now.getHours()
+const minutes = now.getMinutes()
+
+console.log(`${year}-${month}-${day} ${hour}:${minutes}`);
+console.log(`${day}-${month}-${year} ${hour}:${minutes}`);
+console.log(`${day}/${month}/${year} ${hour}:${minutes}`);
