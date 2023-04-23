@@ -80,7 +80,12 @@ const isLeapYear = (year % 4 == 0 && year % 100 != 0) || year % 400 == 0
 let numberOfDays;
 
 if (inputMonth == 2) {
-    numberOfDays = isLeapYear ? 29 : 28;
+    if (((year % 4 == 0 && year % 100 != 0) || year % 400 == 0) == true) {
+        numberOfDays = 29;
+    } else {
+        numberOfDays = 28;
+    }
+
 } else if (inputMonth == 4 || inputMonth == 6 || inputMonth == 9 || inputMonth == 11) {
     numberOfDays = 30;
 } else if (inputMonth == 1 || inputMonth == 3 || inputMonth == 5 || inputMonth == 7 || inputMonth == 8 || inputMonth == 10 || inputMonth == 12) {
