@@ -72,6 +72,8 @@ switch (true) {
     Friday is a working day.
 */
 
+// Using trim function to remove any leading or trailing spaces
+// Using toLowerCase() to convert user input into lower case and make it uniform
 const day = prompt('What is the day today?').trim().toLowerCase();
 
 const workingDays = [`monday`, `tuesday`, `wednesday`, `thursday`, `friday`]
