@@ -55,3 +55,31 @@ switch (true) {
     default:
         console.log(`Your Input is not a Month`);
 }
+
+/**
+    #3 Check if a day is weekend day or a working day. Your script will take day as an input.
+
+    What is the day today? Saturday
+    Saturday is a weekend.
+
+    What is the day today? saturDaY
+    Saturday is a weekend.
+
+    What is the day today? Friday
+    Friday is a working day.
+
+    What is the day today? FrIDAy
+    Friday is a working day.
+*/
+
+const day = prompt('What is the day today?').trim().toLowerCase();
+
+const workingDays = [`monday`, `tuesday`, `wednesday`, `thursday`, `friday`]
+
+if (day === `saturday` || day === `sunday`) {
+    console.log(`${day} is weekend`);
+} else if (workingDays.includes(day)) {
+    console.log(`${day} is a working day`);    
+} else {
+    console.log(`INVALID INPUT: Enter a Valid Input`);
+}
