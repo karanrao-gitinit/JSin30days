@@ -61,5 +61,17 @@ console.log(`Last Company in itCompanies[]: ${itCompanies[itCompanies.length - 1
 console.log(`Middle Company in itCompanies[]: ${itCompanies[Math.floor(itCompanies.length / 2)]}`);
 
 // #10 Print out each company
-console.log(itCompanies.toString());
+console.log(`\nIT Companies:`);
+for (let i = 0; i < itCompanies.length; i++) {
+  console.log(itCompanies[i]);
+}
+// #11 Change each company name to uppercase one by one and print them out
+console.log(`\nIn UpperCase: `);
+for (let i = 0; i < itCompanies.length; i++) {
+    console.log(itCompanies[i].toUpperCase());
+}
+
+// #12 Print the array like as a sentence: Facebook, Google, Microsoft, Apple, IBM, Oracle and Amazon are big IT companies.
+console.log(`\n${itCompanies.join(`, `)} are big IT companies`);
+
 
