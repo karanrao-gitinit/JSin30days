@@ -88,3 +88,6 @@ if (index === -1) {
 
 // #15 Sort the array using sort() method
 console.log(itCompanies.sort());
+
+// #16 Reverse the array using reverse() method
+console.log(itCompanies.reverse());
