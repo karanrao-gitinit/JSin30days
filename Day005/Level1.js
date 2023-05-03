@@ -82,3 +82,9 @@ if (index === -1) {
 } else {
     console.log(`The company exists in the array`);
 }
+
+// #14 Filter out companies which have more than one 'o' without the filter method
+
+
+// #15 Sort the array using sort() method
+console.log(itCompanies.sort());
