@@ -74,4 +74,11 @@ for (let i = 0; i < itCompanies.length; i++) {
 // #12 Print the array like as a sentence: Facebook, Google, Microsoft, Apple, IBM, Oracle and Amazon are big IT companies.
 console.log(`\n${itCompanies.join(`, `)} are big IT companies`);
 
+// #13 Check if a certain company exists in the itCompanies array. If it exist return the company else return a company is not found
+let index = itCompanies.indexOf(`Alphabet`)
 
+if (index === -1) {
+    console.log(`The company doesn't exist in the array`);
+} else {
+    console.log(`The company exists in the array`);
+}
