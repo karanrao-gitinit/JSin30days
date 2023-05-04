@@ -126,3 +126,6 @@ console.log(itCompanies.splice(0,1));
 // #21 Remove the middle IT company or companies from the array
 const removeMiddleCompanies = itCompanies.splice(middleIndex, 1)
 console.log(removeMiddleCompanies);
+
+// #22 Remove the last IT company from the array
+console.log(itCompanies.pop());
