@@ -117,7 +117,7 @@ console.log(itCompanies.slice(-3,itCompanies.length));
 
 // #19 Slice out the middle IT company or companies from the array
 const middleIndex = Math.floor(itCompanies.length / 2)
-const middleCompanies = itCompanies.slice(middleIndex, 1)
+const middleCompanies = itCompanies.splice(middleIndex, 1)
 console.log(middleCompanies);
 
 // #20 Remove the first IT company from the array
@@ -129,3 +129,6 @@ console.log(removeMiddleCompanies);
 
 // #22 Remove the last IT company from the array
 console.log(itCompanies.pop());
+
+// #23 Remove all IT companies
+console.log(itCompanies.splice());
