@@ -84,6 +84,23 @@ if (index === -1) {
 }
 
 // #14 Filter out companies which have more than one 'o' without the filter method
+const filteredCompanies = []
+
+for (let i = 0; i < itCompanies.length; i++) {
+    const company = itCompanies[i];
+    let oCount = 0;
+
+    for (let j = 0; j < company.length; j++) {
+        if (company[j] === `o` || company[j] === `O`) {
+            oCount++;
+        }
+    }
+
+    if (oCount <= 1) {
+        filteredCompanies.push(company); // Populates the array with company names having more than one 'o'.
+    }
+}
+console.log(filteredCompanies);
 
 
 // #15 Sort the array using sort() method
@@ -105,3 +122,5 @@ console.log(middleCompanies);
 
 // #20 Remove the first IT company from the array
 console.log(itCompanies.splice(0,1));
+
+// #21 
