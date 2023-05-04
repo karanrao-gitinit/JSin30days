@@ -103,3 +103,5 @@ const middleIndex = Math.floor(itCompanies.length / 2)
 const middleCompanies = itCompanies.splice(middleIndex, 1)
 console.log(middleCompanies);
 
+// #20 Remove the first IT company from the array
+console.log(itCompanies.splice(0,1));
