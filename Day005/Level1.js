@@ -97,3 +97,9 @@ console.log(itCompanies.slice(0,3));
 
 // #18 Slice out the last 3 companies from the array
 console.log(itCompanies.slice(-3,itCompanies.length));
+
+// #19 Slice out the middle IT company or companies from the array
+const middleIndex = Math.floor(itCompanies.length / 2)
+const middleCompanies = itCompanies.splice(middleIndex, 1)
+console.log(middleCompanies);
+
