@@ -11,7 +11,7 @@ console.log(countries);
 console.log(web_tech);
 
 /**
-  First remove all the punctuations and change the string to array and count the 
+  #2 First remove all the punctuations and change the string to array and count the 
   number of words in the array
 
     let text =
@@ -27,7 +27,7 @@ console.log(words)
 console.log(words.length)
 
 /**
-  In the following shopping cart add, remove, edit items
+  #3 In the following shopping cart add, remove, edit items
   
     const shoppingCart = ['Milk', 'Coffee', 'Tea', 'Honey']
 
@@ -57,3 +57,11 @@ console.log(shoppingCart);
 // Modifies Tea to Green Tea
 shoppingCart.splice(3, 1, `Green Tea`) 
 console.log(shoppingCart);
+
+
+/**
+  #4 In countries array check if 'Ethiopia' exists in the array if it exists print 'ETHIOPIA'. 
+  If it does not exist add to the countries list.
+*/
+
+
