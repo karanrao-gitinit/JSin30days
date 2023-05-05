@@ -1,4 +1,4 @@
-const web_techs = [
+ const web_techs = [
     `HTML`,
     `CSS`,
     `Javascript`,
@@ -15,3 +15,5 @@ const web_techs = [
     `Go`,
     `Python`
 ]
+
+module.exports = web_techs;

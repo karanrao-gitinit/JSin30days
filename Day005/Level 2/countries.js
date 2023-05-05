@@ -1,4 +1,4 @@
-const countries = [
+ const countries = [
     `India`,
     `Pakistan`,
     `Nepal`,
@@ -10,3 +10,5 @@ const countries = [
     `Afganistan`,
     `Singapore`
 ]
+
+module.exports = countries;
