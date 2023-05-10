@@ -56,14 +56,12 @@ console.log(Math.abs(maxAge - avgAge));
 
 
 
-// #2 Find the middle country(ies) in the countries array
-// const countries = require (`./countries`);
+// #2.1. Slice the first ten countries from the countries array
 
+const countries = require (`./countries`);
 
+console.log(countries.slice(0,10));
+// 2.2. Find the middle country(ies) in the countries array
 
-
-/**
-  #3 Divide the countries array into two equal arrays if it is even. 
-  If countries array is not even , one more country for the first half.
-*/
-
+const middleCountry = countries[Math.floor(countries.length / 2)];
+console.log(middleCountry);
