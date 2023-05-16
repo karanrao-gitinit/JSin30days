@@ -48,3 +48,22 @@ let n = 10;
 for (let i = 0; i <= n; i++) {
     console.log(i);
 }
+
+/* 
+#4 Write a loop that makes the following pattern using console.log():
+    #
+    ##
+    ###
+    ####
+    #####
+    ######
+    #######
+*/
+
+for(let i = 0; i < 7; i++) {
+    let row = '';
+    for (let j = 0; j < i; j++) {
+        row += '#';
+    }
+    console.log(row);
+}
