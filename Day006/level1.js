@@ -41,3 +41,10 @@ do {
     console.log(x);
     x--;
 } while (x >= 10); 
+
+// #3 Iterate 0 to n using for loop
+let n = 10;
+
+for (let i = 0; i <= n; i++) {
+    console.log(i);
+}
