@@ -85,5 +85,45 @@ for(let i = 0; i < 7; i++) {
 */
 
 for(let i = 0; i <= 10; i++) {
-    console.log(`${i} x ${i} = ${i * i}`);
+    console.log(`${i} x ${i} = ${i * i}`);z
 }
+
+// #7 Use for loop to iterate from 0 to 100 and print only even numberse
+
+for (let i = 0; i <= 100; i += 2) {
+    console.log(i);
+}
+
+// #8 Use for loop to iterate from 0 to 100 and print only odd numbers
+
+for (let i = 1; i <= 100; i+=2) {
+    console.log(i);
+}
+
+// #9 Use for loop to iterate from 0 to 100 and print only prime numbers
+
+for (let i = 2; i <= 100; i++) {
+    let isPrime = true;
+
+    for (let j = 2; j < i; j++) {
+        if (i % j === 0) {
+            isPrime = false;
+            break;
+        }
+    }
+
+    if (isPrime) {
+        console.log(i);
+    }
+}
+
+/* #10 Use for loop to iterate from 0 to 100 and print the sum of all numbers.
+
+    The sum of all numbers from 0 to 100 is 5050.
+
+*/
+let sum = 0;
+for (let i = 0; i <= 100; i++) {
+    sum += i;
+}
+console.log(`The sum of all numbers from 0 to 100 is ${sum}`);
