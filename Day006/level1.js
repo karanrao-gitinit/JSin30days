@@ -127,3 +127,39 @@ for (let i = 0; i <= 100; i++) {
     sum += i;
 }
 console.log(`The sum of all numbers from 0 to 100 is ${sum}`);
+
+/*
+    #11 Use for loop to iterate from 0 to 100 and print the sum of all evens and the sum of all odds.
+
+    The sum of all evens from 0 to 100 is 2550. And the sum of all odds from 0 to 100 is 2500.
+
+*/
+
+let sum2 = 0, sum3 = 0;
+
+for (let i = 0; i <= 100; i++) {
+
+    // for even numbers
+    if (i % 2 == 0) {
+        sum2 += i
+    }
+
+    // for odd number
+    else {
+        sum3 += i
+    }
+}
+
+console.log(`The sum of all even from 0 to 100 is ${sum2}`);
+console.log(`The sum of all odd from 0 to 100 is ${sum3}`);
+
+/*
+    #12 Use for loop to iterate from 0 to 100 and print the sum of all evens and the sum of all odds.
+    Print sum of evens and sum of odds as array
+
+    [2550, 2500]
+
+*/
+
+const arr = [sum2 , sum3];
+console.log(arr);
