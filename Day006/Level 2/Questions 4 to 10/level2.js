@@ -56,7 +56,7 @@ console.log(sampleCountriesLenght);
 let arrayofCountries = [];
 
 for (let i = 0; i < sampleCountries.length; i++) {
-    
+
     arrayofCountries.push(sampleCountries[i]);
     arrayofCountries.push(sampleCountries[i].slice(0, 3));
     arrayofCountries.push(sampleCountries[i].length);
@@ -65,7 +65,9 @@ for (let i = 0; i < sampleCountries.length; i++) {
 console.log(arrayofCountries);
 
 /*
-    #7 In above countries array, check if there is a country or countries containing the word 'land'. If there are countries containing 'land', print it as array. If there is no country containing the word 'land', print 'All these countries are without land'.
+    #7 In above countries array, check if there is a country or countries containing the word 'land'. 
+    If there are countries containing 'land', print it as array. 
+    If there is no country containing the word 'land', print 'All these countries are without land'.
 
     ['Finland','Ireland', 'Iceland']
 */
@@ -73,9 +75,35 @@ console.log(arrayofCountries);
 let countriesWithLand = [];
 
 for (let i = 0; i < countries.length; i++) {
-    if(countries[i].includes('land')) {
+    if (countries[i].includes('land')) {
         countriesWithLand.push(countries[i]);
+    }
+
+    if (countriesWithLand.length > 0) {
+        console.log(countriesWithLand);
+    } else {
+        console.log('All these countries are without land');
     }
 }
 
-console.log(countriesWithLand);
+/*  
+    #8 In above countries array, check if there is a country or countries end with a substring 'ia'. 
+    If there are countries end with, print it as array. If there is no country containing the word 'ai', print 'These are countries ends without ia'.
+
+    ['Albania', 'Bolivia','Ethiopia']
+*/
+
+let countriesWithIA = [];
+
+for (let i = 0; i < countries.length; i++) {
+    if (countries[i].includes('ia')) {
+        countriesWithIA.push(countries[i]);
+    }
+
+    if (countriesWithIA.length > 0) {
+        console.log(countriesWithIA);
+    } else {
+        console.log('These are countries ends without ia');
+    }
+    
+}
