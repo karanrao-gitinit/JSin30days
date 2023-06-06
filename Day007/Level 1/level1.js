@@ -16,3 +16,24 @@ function fullName(firstName, lastName) {
 }
 
 console.log(fullName(`Karan`, `Rao`))
+
+/**
+    #3 Declare a function addNumbers and it takes two two parameters and it returns sum.
+*/
+
+function addNumbers(numOne, numTwo) {
+    return sum = numOne + numTwo
+}
+
+console.log(addNumbers(10,20));
+
+/**
+    #4 An area of a rectangle is calculated as follows: area = length x width.
+    Write a function which calculates areaOfRectangle.
+*/
+
+const areaOfRectangle = (length, width) => {
+    return area = length * width
+}
+
+console.log(areaOfRectangle(5,8));
