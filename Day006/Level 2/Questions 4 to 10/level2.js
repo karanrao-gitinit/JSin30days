@@ -107,3 +107,22 @@ for (let i = 0; i < countries.length; i++) {
     }
     
 }
+
+/*
+  Using the above countries array, find the country containing the biggest number of characters.
+  
+  'Ethiopia'
+*/
+
+let maxCharacter = '';
+let maxCountryLength = 0;
+
+for (let i = 0; i < sampleCountries.length; i++) {
+    const name = sampleCountries[i];
+    if (name.length > maxCountryLength) {
+        maxCharacter = name;
+        maxCountryLength = name.length
+    }
+}
+
+console.log('The largest name in sampleCountries[] array is: ' + maxCharacter + ' with ' + maxCountryLength + ' characters.');
