@@ -70,3 +70,14 @@ function areaOfCircle (radius) {
 }
 
 console.log(areaOfCircle(5));
+
+/*
+    #8 Circumference of a circle is calculated as follows: circumference = 2πr.
+    Write a function which calculates circumOfCircle
+*/
+
+function circumOfCircle(radius) {
+    return (2 * 3.14 * radius)
+}
+
+console.log(circumOfCircle(7));
