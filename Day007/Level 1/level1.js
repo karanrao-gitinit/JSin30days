@@ -92,3 +92,14 @@ function density(mass, volume) {
 }
 
 console.log(density(10, 4));
+
+/*
+    #10 Speed is calculated by dividing the total distance covered by a moving object divided by the total amount of time taken.
+    Write a function which calculates a speed of a moving object, speed.
+*/
+
+function speed(totalDistanceCovered, totalTimeTaken) {
+    return (totalDistanceCovered / totalTimeTaken)
+}
+
+console.log(`Speed is ` + (speed(100, 5) + ` km/hour`));
