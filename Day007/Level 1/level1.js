@@ -81,3 +81,14 @@ function circumOfCircle(radius) {
 }
 
 console.log(circumOfCircle(7));
+
+/*
+    #9 Density of a substance is calculated as follows:density= mass/volume. 
+    Write a function which calculates density.
+*/
+
+function density(mass, volume) {
+    return (mass / volume)
+}
+
+console.log(density(10, 4));
