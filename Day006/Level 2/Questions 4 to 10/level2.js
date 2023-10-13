@@ -109,7 +109,7 @@ for (let i = 0; i < countries.length; i++) {
 }
 
 /*
-  Using the above countries array, find the country containing the biggest number of characters.
+   #9 Using the above countries array, find the country containing the biggest number of characters.
   
   'Ethiopia'
 */
