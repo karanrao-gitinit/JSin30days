@@ -114,3 +114,18 @@ function weight(mass, gravity) {
 }
 
 console.log(`Weight is: ` + (4,10));
+
+/*
+    #12 Temperature in oC can be converted to oF using this formula: oF = (oC x 9/5) + 32. 
+    Write a function which convert oC to oF convertCelsiusToFahrenheit.
+*/
+
+
+function convertCelsiusToFahrenheit(oC) {
+    return((oC * 9/5) + 32)
+}
+
+const temperatureInCelsius = 32;
+const temperatureInFahrenheit = convertCelsiusToFahrenheit(temperatureInCelsius);
+
+console.log(`${temperatureInCelsius} Celsius is equivalent to ${temperatureInFahrenheit} Fahrenheit`);
