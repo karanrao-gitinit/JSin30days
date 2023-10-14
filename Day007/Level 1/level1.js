@@ -1,7 +1,7 @@
 // #1 Declare a function fullName and it print out your full name.
 
 function fullname() {
-    console.log(`Karan Rao`);
+  console.log(`Karan Rao`);
 }
 
 fullname(); // function invoking
@@ -12,20 +12,20 @@ fullname(); // function invoking
 */
 
 function fullName(firstName, lastName) {
-    return `${firstName} ${lastName}`
+  return `${firstName} ${lastName}`;
 }
 
-console.log(fullName(`Karan`, `Rao`))
+console.log(fullName(`Karan`, `Rao`));
 
 /**
     #3 Declare a function addNumbers and it takes two two parameters and it returns sum.
 */
 
 function addNumbers(numOne, numTwo) {
-    return sum = numOne + numTwo
+  return (sum = numOne + numTwo);
 }
 
-console.log(addNumbers(10,20));
+console.log(addNumbers(10, 20));
 
 /**
     #4 An area of a rectangle is calculated as follows: area = length x width.
@@ -33,18 +33,18 @@ console.log(addNumbers(10,20));
 */
 
 const areaOfRectangle = (length, width) => {
-    return area = length * width
-}
+  return (area = length * width);
+};
 
-console.log(areaOfRectangle(5,8));
+console.log(areaOfRectangle(5, 8));
 
 /**
     #5 A perimeter of a rectangle is calculated as follows: perimeter= 2x(length + width). 
     Write a function which calculates perimeterOfRectangle. 
 */
 const parameterOfRectangle = (length, width) => {
-    return (2 * (length + width))
-}
+  return 2 * (length + width);
+};
 
 console.log(parameterOfRectangle(8, 4));
 
@@ -54,9 +54,8 @@ console.log(parameterOfRectangle(8, 4));
 */
 
 const volumeOfRectPrism = (length, width, height) => {
-    return (length * width * height)
-    
-}
+  return length * width * height;
+};
 
 console.log(volumeOfRectPrism(5, 8, 8));
 
@@ -65,8 +64,8 @@ console.log(volumeOfRectPrism(5, 8, 8));
     Write a function which calculates areaOfCircle
 */
 
-function areaOfCircle (radius) {
-    return (3.14 * radius * radius) // Value of π = 3.14
+function areaOfCircle(radius) {
+  return 3.14 * radius * radius; // Value of π = 3.14
 }
 
 console.log(areaOfCircle(5));
@@ -77,7 +76,7 @@ console.log(areaOfCircle(5));
 */
 
 function circumOfCircle(radius) {
-    return (2 * 3.14 * radius)
+  return 2 * 3.14 * radius;
 }
 
 console.log(circumOfCircle(7));
@@ -88,7 +87,7 @@ console.log(circumOfCircle(7));
 */
 
 function density(mass, volume) {
-    return (mass / volume)
+  return mass / volume;
 }
 
 console.log(density(10, 4));
@@ -99,10 +98,10 @@ console.log(density(10, 4));
 */
 
 function speed(totalDistanceCovered, totalTimeTaken) {
-    return (totalDistanceCovered / totalTimeTaken)
+  return totalDistanceCovered / totalTimeTaken;
 }
 
-console.log(`Speed is ` + (100, 5) + ` km/hour`);
+console.log(`Speed is ` + speed(100, 5) + ` km/hour`);
 
 /*
     #11 Weight of a substance is calculated as follows: weight = mass x gravity. 
@@ -110,22 +109,51 @@ console.log(`Speed is ` + (100, 5) + ` km/hour`);
 */
 
 function weight(mass, gravity) {
-    return (mass * gravity)
+  return mass * gravity;
 }
 
-console.log(`Weight is: ` + (4,10));
+console.log(`Weight is: ` + weight(4, 10));
 
 /*
     #12 Temperature in oC can be converted to oF using this formula: oF = (oC x 9/5) + 32. 
     Write a function which convert oC to oF convertCelsiusToFahrenheit.
 */
 
-
 function convertCelsiusToFahrenheit(oC) {
-    return((oC * 9/5) + 32)
+  return (oC * 9) / 5 + 32;
 }
 
 const temperatureInCelsius = 32;
-const temperatureInFahrenheit = convertCelsiusToFahrenheit(temperatureInCelsius);
+const temperatureInFahrenheit =
+  convertCelsiusToFahrenheit(temperatureInCelsius);
 
-console.log(`${temperatureInCelsius} Celsius is equivalent to ${temperatureInFahrenheit} Fahrenheit`);
+console.log(
+  `${temperatureInCelsius} Celsius is equivalent to ${temperatureInFahrenheit} Fahrenheit`
+);
+
+/*
+    #13 Body mass index(BMI) is calculated as follows: bmi = weight in Kg / (height x height) in m2. 
+    Write a function which calculates bmi. BMI is used to broadly define different weight groups in 
+    adults 20 years old or older.Check if a person is underweight, normal, overweight or obese based the information given below.
+
+    The same groups apply to both men and women.
+    Underweight: BMI is less than 18.5
+    Normal weight: BMI is 18.5 to 24.9
+    Overweight: BMI is 25 to 29.9
+    Obese: BMI is 30 or more
+*/
+
+function calculateBMI(weightInKG, height) {
+  const bmi = weightInKG / (height * height);
+  return bmi <= 18.5
+    ? "Underweight"
+    : bmi > 18.5 && bmi < 24.9
+    ? "Normal Weight"
+    : bmi > 25 && bmi < 29.9
+    ? "Overweight"
+    : "Obses";
+}
+const weightInKG = 74.5;
+const height = 1.8;
+const result = calculateBMI(weightInKG, height);
+console.log(`BMI Category: ${result}`);
