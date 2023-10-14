@@ -102,4 +102,15 @@ function speed(totalDistanceCovered, totalTimeTaken) {
     return (totalDistanceCovered / totalTimeTaken)
 }
 
-console.log(`Speed is ` + (speed(100, 5) + ` km/hour`));
+console.log(`Speed is ` + (100, 5) + ` km/hour`);
+
+/*
+    #11 Weight of a substance is calculated as follows: weight = mass x gravity. 
+    Write a function which calculates weight.
+*/
+
+function weight(mass, gravity) {
+    return (mass * gravity)
+}
+
+console.log(`Weight is: ` + (4,10));
