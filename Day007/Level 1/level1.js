@@ -178,7 +178,7 @@ const currentSeason = checkSeason(month);
 console.log(`The Current Season is ${currentSeason}`);
 
 /*
-    #14 Math.max returns its largest argument. 
+    #15 Math.max returns its largest argument. 
     Write a function findMax that takes three 
     arguments and returns their maximum without 
     using Math.max method.
