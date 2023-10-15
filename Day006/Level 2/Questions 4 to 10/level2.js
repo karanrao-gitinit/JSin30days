@@ -126,3 +126,21 @@ for (let i = 0; i < sampleCountries.length; i++) {
 }
 
 console.log('The largest name in sampleCountries[] array is: ' + maxCharacter + ' with ' + maxCountryLength + ' characters.');
+
+/*
+    # 10 Using the above countries array, find the country containing only 5 characters.
+
+    ['Japan', 'Kenya']
+*/
+
+let maxCharacterLength = 5;
+let countriesWith5Character = [];
+
+for (let i = 0; i < sampleCountries.length; i++) {
+    const name = sampleCountries[i];
+    if (name.length === maxCharacterLength) {
+        countriesWith5Character.push(name);
+    }
+}
+
+console.log(countriesWith5Character);
