@@ -157,3 +157,22 @@ const weightInKG = 74.5;
 const height = 1.8;
 const result = calculateBMI(weightInKG, height);
 console.log(`BMI Category: ${result}`);
+
+/*
+    #14 Write a function called checkSeason, it takes a month parameter
+    and returns the season:Autumn, Winter, Spring or Summer.
+*/
+
+function checkSeason(month) {
+  return month >=3 && month < 5
+  ? "Spring" 
+  : month > 6 &&  month < 8
+  ? "Summer"
+  : month > 9 && month < 11
+  ? "Autumn"
+  : "Winter"
+}
+
+const month = 2;
+const currentSeason = checkSeason(month);
+console.log(`The Current Season is ${currentSeason}`);
