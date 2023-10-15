@@ -176,3 +176,29 @@ function checkSeason(month) {
 const month = 2;
 const currentSeason = checkSeason(month);
 console.log(`The Current Season is ${currentSeason}`);
+
+/*
+    #14 Math.max returns its largest argument. 
+    Write a function findMax that takes three 
+    arguments and returns their maximum without 
+    using Math.max method.
+
+    console.log(findMax(0, 10, 5))
+    10
+
+    console.log(findMax(0, -10, -2))
+    0
+*/    
+
+function findMax(num1, num2, num3) {
+  let maxNum = num1
+  if (maxNum < num2) {
+    maxNum = num2;
+  }
+  if (maxNum < num3){
+    maxNum = num3;
+  }
+    return maxNum;
+}
+
+console.log(findMax(0, -10, -5));
