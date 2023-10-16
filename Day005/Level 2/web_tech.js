@@ -1,7 +1,7 @@
  const web_techs = [
     `HTML`,
     `CSS`,
-    `Javascript`,
+    `JavaScript`,
     `Java`,
     `C`,
     `C++`,
@@ -13,7 +13,11 @@
     `SQL`,
     `Lua`,
     `Go`,
-    `Python`
+    `Python`,
+    `React`,
+    `Redux`,
+    `Node`,
+    `MongoDB`
 ]
 
 module.exports = web_techs;

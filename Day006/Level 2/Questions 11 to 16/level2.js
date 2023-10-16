@@ -23,7 +23,8 @@ console.log(
     [["HTML", 4], ["CSS", 3],["JavaScript", 10],["React", 5],["Redux", 5],["Node", 4],["MongoDB", 7]]
 */
 
-const webdevtech = [
+
+const techinfo = [
   ["HTML", 4],
   ["CSS", 3],
   ["JavaScript", 10],
@@ -32,15 +33,29 @@ const webdevtech = [
   ["Node", 4],
   ["MongoDB", 7],
 ];
-
+    
 const newTechArray = [];
 
-for (const tech of web_techs) {
-  for (const info of webdevtech) {
-    if (tech.length === webdevtech[1]) {
-      newTechArray.push([tech, webdevtech[1]]);
+for (const info of techinfo) {
+    const [techName, length] = info;
+    if (web_techs.includes(techName)) {
+        newTechArray.push([techName, length]);
     }
-  }
 }
 
 console.log(newTechArray);
+
+/*
+    #13 An application created using MongoDB, Express, React and Node is called a MERN stack app.
+    Create the acronym MERN by using the array mernStack
+*/
+
+const mernStack = [['MongoDB'], ['Express'], ['React'], ['Node']];
+let acronym = '';
+
+for (let i = 0; i < mernStack.length; i++) {
+    const stack = mernStack[i][0];
+    acronym += stack[0];
+}
+
+console.log(acronym);
