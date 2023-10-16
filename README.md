@@ -7,7 +7,7 @@ Day 02 |Stucked in [LEVEL 3 Question #3](https://github.com/Asabeneh/30-Days-Of-
 Day 03 | ✔ 🏆
 Day 04 | ✔ 🏆
 Day 05 | ✔ 🏆
-Day 06 | Completed Level 1; On going #12 of Level 2 
+Day 06 | Completed Level 1; Completed until #13 of Level 2 
 Day 07 | Completed Level 1 😊
 Day 08 |
 Day 09 |
