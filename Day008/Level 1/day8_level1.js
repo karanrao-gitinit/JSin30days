@@ -26,9 +26,23 @@ dog.getbark = function() {
 console.log(dog.getbark()); // Output: Dog sounds like woof woof
 
 // #4 Get properties from the object
-
 console.log(`Name: ${dog.name}`);
 console.log(`Number of Legs: ${dog.legs}`);
 console.log(`Colour: ${dog.colour}`);
 console.log(`Age: ${dog.age}`);
 console.log(`Voice: ${dog.bark}`);
+
+// #Set new property
+dog.breed = 'Husky'
+dog.getDogInfo = function() {
+    return `
+    Breed: ${this.breed}\n
+    Name: ${this.name}\n
+    Legs: ${this.legs}\n
+    Colour: ${this.colour}\n
+    Age: ${this.age}\n
+    Sound: ${this.bark}
+    `
+}
+
+console.log(dog.getDogInfo());
