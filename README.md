@@ -8,7 +8,7 @@ Day 03 | ✔ 🏆
 Day 04 | ✔ 🏆
 Day 05 | ✔ 🏆
 Day 06 | Completed Level 1; Completed until #13 of Level 2 
-Day 07 | Completed Level 1 😊
+Day 07 | Completed Level 1 😊; Completed until #1 of Level 2
 Day 08 |
 Day 09 |
 Day 10 |
